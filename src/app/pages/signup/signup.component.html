@@ -1,4 +1,5 @@
-<app-default-login-layout [disablePrimaryBtn]="!signupForm.valid"
+<app-default-login-layout 
+	[disablePrimaryBtn]="!signupForm.valid"
 	(submit)="submit()"
 	(navigate)="navigate()"
 	title="Sign in and start today!"
@@ -22,7 +23,7 @@
 		<app-primary-input formControlName="password"
 			type="password"
 			inputName="password"
-			label="Password"
+			label="Password"+
 			placeholder="Enter your password">
 			<img src="/assets/svg/password-icon.svg">
 		</app-primary-input>
